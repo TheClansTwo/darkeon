@@ -1,0 +1,92 @@
+body
+{
+    background-image:url('background\ menu.png');
+}
+#gameimg
+{
+    padding-top: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#lefty
+{
+    display: flex;
+    align-items: center; 
+    justify-content: left;
+    margin-top: 150px;
+    color: rgb(242, 242, 242);
+    text-shadow: 3px 3px rgb(39, 39, 39);
+    font-family: '04b_25';
+    vertical-align: middle;
+    font-size: xx-large;
+}
+
+.donlod
+{
+    text-decoration: none;
+    margin:auto;
+    color: rgb(82, 82, 82);
+    background-color: rgb(255, 48, 48);
+    border: solid 5px rgb(200, 41, 41);
+    font-family:'darkeon';
+    text-shadow: 5px 0px rgb(44, 44, 44);
+    width:fit-content;
+    padding: 6px;
+    font-size: larger;
+    display:inline-block;
+    height:50px;
+}
+.donlod:hover
+{
+    background-color: rgb(200, 48, 48);
+    border-color: rgb(150, 41, 41);
+}
+
+h2
+{
+    margin: auto;
+    color: rgb(242, 242, 242);
+    text-shadow: 3px 3px rgb(39, 39, 39);
+    font-family: '04b_25';
+    text-align: center;
+    width: 50%;
+    height: 200px;
+}
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: rgba(0, 0, 0, 0.61);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.navbar
+{
+    user-select:none;
+    vertical-align: middle;
+    margin: auto;
+}
+
+.navbar a
+{
+    text-decoration: none;
+    color: rgb(238, 255, 0);
+    background-color: rgb(214, 139, 0);
+    border: solid rgb(126, 82, 0);
+    font-family: '04b_25';
+    font-size: 30px;
+    margin-left: 40px;
+    padding: 6px;
+}
+.navbar a:hover
+{
+    background-color: rgb(187, 75, 0);
+    border: solid rgb(187, 75, 0);
+}
