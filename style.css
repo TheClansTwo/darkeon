@@ -2,6 +2,9 @@
 {
     font-family: orcozzio; 
     src: url(04b_25.ttf);
+
+    font-family: darkeon; 
+    src: url(darkeon.ttf);
 }
 body
 {
@@ -23,7 +26,7 @@ body
     margin-top: 150px;
     color: rgb(242, 242, 242);
     text-shadow: 3px 3px rgb(39, 39, 39);
-    font-family: 04b_25; src: url('04b_25.ttf');
+    font-family: orcozzio; 
     vertical-align: middle;
     font-size: xx-large;
 }
@@ -36,7 +39,7 @@ body
     background-color: rgb(255, 48, 48);
     border: solid 5px rgb(200, 41, 41);
     
-    font-family: orcozzio; 
+    font-family: darkeon; 
     
     text-shadow: 5px 0px rgb(44, 44, 44);
     width:fit-content;
@@ -56,7 +59,7 @@ h2
     margin: auto;
     color: rgb(242, 242, 242);
     text-shadow: 3px 3px rgb(39, 39, 39);
-    font-family: 04b_25; src: url('04b_25.ttf');
+    font-family: orcozzio; 
     text-align: center;
     width: 50%;
     height: 200px;
@@ -87,7 +90,7 @@ h2
     color: rgb(238, 255, 0);
     background-color: rgb(214, 139, 0);
     border: solid rgb(126, 82, 0);
-    font-family: 04b_25; src: url('04b_25.ttf');
+    font-family: orcozzio; 
     font-size: 30px;
     margin-left: 40px;
     padding: 6px;
