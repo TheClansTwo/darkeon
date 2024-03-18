@@ -1,7 +1,7 @@
 @font-face
 {
-    font-family: 04b_25; 
-    src: url('04b_25.ttf');
+    font-family: orcozzio; 
+    src: url(04b_25.ttf);
 }
 body
 {
@@ -36,7 +36,7 @@ body
     background-color: rgb(255, 48, 48);
     border: solid 5px rgb(200, 41, 41);
     
-    font-family: 04b_25; 
+    font-family: orcozzio; 
     
     text-shadow: 5px 0px rgb(44, 44, 44);
     width:fit-content;
