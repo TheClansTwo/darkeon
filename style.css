@@ -29,7 +29,6 @@ body
     color: rgb(242, 242, 242);
     text-shadow: 3px 3px rgb(39, 39, 39);
     font-family: orcozzio; 
-    src: url(04b_25.ttf);
     vertical-align: middle;
     font-size: xx-large;
 }
@@ -62,8 +61,7 @@ h2
     margin: auto;
     color: rgb(242, 242, 242);
     text-shadow: 3px 3px rgb(39, 39, 39);
-    font-family: orcozzio; 
-    src: url(04b_25.ttf);
+    font-family: orcozzio;
     text-align: center;
     width: 50%;
     height: 200px;
@@ -95,7 +93,6 @@ h2
     background-color: rgb(214, 139, 0);
     border: solid rgb(126, 82, 0);
     font-family: orcozzio; 
-    src: url(04b_25.ttf);
     font-size: 30px;
     margin-left: 40px;
     padding: 6px;
