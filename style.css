@@ -1,10 +1,12 @@
 @font-face
 {
-    font-family: orcozzio; 
-    src: url(04b_25.ttf);
-
     font-family: darkeon; 
     src: url(darkeon.ttf);
+}
+@font-face
+{
+    font-family: orcozzio; 
+    src: url(04b_25.ttf);
 }
 body
 {
