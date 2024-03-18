@@ -30,9 +30,14 @@ body
     color: rgb(82, 82, 82);
     background-color: rgb(255, 48, 48);
     border: solid 5px rgb(200, 41, 41);
+    
     font-family: 'darkeonregular';
-    src: url('darkeon-webfont.woff2') format('woff2'),
-         url('darkeon-webfont.woff') format('woff');
+    src: url('darkeon-webfont.eot');
+    src: url('darkeon-webfont.eot?#iefix') format('embedded-opentype'),
+    url('darkeon-webfont.woff') format('woff'),
+    url('darkeon-webfont.ttf') format('truetype'),
+    url('darkeon-webfont.svg#webfont') format('svg');
+    
     text-shadow: 5px 0px rgb(44, 44, 44);
     width:fit-content;
     padding: 6px;
