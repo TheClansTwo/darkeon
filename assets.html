@@ -1,18 +1,66 @@
 <!DOCTYPE html>
-<title>Darkeon official site</title>
+<html lang="it">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darkeon | Assets Vault</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
 <body>
-    <link rel="stylesheet" href="style.css">
-    <header class="header">
-        <a href="logo.png" class="logo"><img src="logo.png"></a>
-        
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="assets.html">Assets</a>
-            <a onclick="window.location.href='https://discord.gg/UvZV595JwD'">Discord</a>
+    <header>
+        <button onclick="sendToPageClick('index.html')" class="lmenu">
+            <img src="logo.png" alt="Darkeon Logo">
+        </button>
+
+        <nav class="buttons">
+            <button onclick="sendToPageClick('index.html')" class="button">Home</button>
+            <button onclick="sendToPageClick('https://discord.gg/UvZV595JwD')" class="button">Discord</button>
         </nav>
     </header>
-    <a id="lefty" href="https://discord.gg/UvZV595JwD"><img src="discord.png" id="lefttext">Discord server</a>
-    <a id="lefty" href="darkeon.ttf" download=""><img src="font.png" id="lefttext">Darkeon font</a>
+
+    <main class="container">
+        <h1 class="page-title">THE ASSET VAULT</h1>
+
+        <div class="assets-grid">
+            <div class="asset-card">
+                <div class="asset-preview">
+                    <img src="game icon.png" alt="Game Sprites">
+                </div>
+                <div class="asset-info">
+                    <h3>Game Sprites [coming soon]</h3>
+                    <p>All monster and hero frames in high-quality pixel art.</p>
+                    <button class="button small-button">DOWNLOAD</button>
+                </div>
+            </div>
+
+            <div class="asset-card">
+                <div class="asset-preview" style="background: #333;"></div>
+                <div class="asset-info">
+                    <h3>Dungeon Tileset [coming soon]</h3>
+                    <p>Procedural environment textures for room generation.</p>
+                    <button class="button small-button">DOWNLOAD</button>
+                </div>
+            </div>
+
+            <div class="asset-card">
+                <div class="asset-preview" style="background: #333;"></div>
+                <div class="asset-info">
+                    <h3>UI Elements [coming soon]</h3>
+                    <p>Health bars, buttons, and pixelated HUD icons.</p>
+                    <button class="button small-button">DOWNLOAD</button>
+                </div>
+            </div>
+        </div>
+
+        <button id="secret-trigger" onclick="revealSecret()"></button>
+        <p id="secret-text" style="display:none; margin-top: 20px; font-family: 'darkeon_1'; color: var(--primary);">ur
+            mom
+        </p>
+    </main>
+
+    <script src="main.js"></script>
 </body>
+
+</html>

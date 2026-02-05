@@ -1,22 +1,70 @@
 <!DOCTYPE html>
-<title>Darkeon official site</title>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darkeon | Official Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
 <body>
-    <header class="header">
-        <a href="logo.png" class="logo"><img src="logo.png"></a>
-        
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="assets.html">Assets</a>
-            <a href="https://discord.gg/UvZV595JwD">Discord</a>
+    <header>
+        <button onclick="sendToPageClick('index.html')" class="lmenu">
+            <img src="logo.png" alt="Darkeon Logo">
+        </button>
+        <nav class="buttons">
+            <button onclick="sendToPageClick('assets.html')" class="button">Assets</button>
+            <button onclick="sendToPageClick('https://discord.gg/UvZV595JwD')" class="button">Discord</button>
         </nav>
     </header>
-    <link rel="stylesheet" href="style.css">
-    <img src="game icon.png" id="gameimg">
-    <h2>
-        Darkeon is a roguelite top-down pixel game with a random sequence of rooms unlocked and powerups, but be careful, you can only get the rewards once you defeat the final boss of the dungeon or else you will lose everything you collected.<br>
-        <p><a class="donlod" href="https://play.google.com/store/apps/details?id=com.gasperitos.grimstonedungeon&hl=it&gl=TW">MOBILE DOWNLOAD</a></p>
-        <p><a class="donlod" href="https://clanstwo.itch.io/darkeon">PC DOWNLOAD</a></p>
-    <h2>
+
+    <main class="container">
+        <div class="game-card">
+            <img src="game icon.png" alt="Game Icon" class="game-icon">
+
+            <h2 id="goryb">
+                Darkeon is a roguelite top-down pixel game featuring randomly generated rooms and deadly powerups.
+                <br><br>
+                Beware: monsters emerge from every shadow of the dungeon, ready to end your run.
+            </h2>
+
+            <button
+                onclick="sendToPageClick('https://play.google.com/store/apps/details?id=com.gasperitos.grimstonedungeon')"
+                class="button cta-button">
+                PLAY NOW
+            </button>
+        </div>
+
+        <section class="feedback-section">
+            <h2 class="feedback-title">SEND FEEDBACK TO THE DEVELOPER</h2>
+            <div class="feedback-box">
+                <form id="feedback-form">
+                    <div class="input-group">
+                        <input type="text" name="user_name" id="user_name" placeholder="YOUR NAME" required
+                            class="input-field">
+                        <input type="email" name="user_email" id="user_email" placeholder="YOUR EMAIL" required
+                            class="input-field">
+                    </div>
+                    <textarea name="message" id="message" placeholder="ENTER YOUR MESSAGE, BUG REPORT OR SUGGESTION..."
+                        required class="input-field" rows="5"></textarea>
+
+                    <button type="submit" class="button" id="send-btn" style="width: 100%;">
+                        Send email
+                    </button>
+                </form>
+                <p id="status-msg"></p>
+            </div>
+        </section>
+    </main>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("KB8YJ8hDN4SUIUh5j");
+        })();
+    </script>
+    <script src="main.js"></script>
 </body>
+
+</html>
