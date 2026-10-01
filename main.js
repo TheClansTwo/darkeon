@@ -7,6 +7,12 @@ function revealSecret() {
     if (txt) txt.style.display = 'block';
 }
 
+async function getVersion() {
+    const res = await fetch("api");
+    const data = await res.json();
+    return data;
+}
+
 const btn = document.getElementById('send-btn');
 const form = document.getElementById('feedback-form');
 
@@ -33,3 +39,11 @@ if (form) {
             });
     });
 }
+
+getVersion()
+    .then(data => {
+        document.getElementById("version").textContent = data.version;
+    })
+    .catch(err => {
+        console.error("Couldn't load version:", err);
+    });

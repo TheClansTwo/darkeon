@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darkeon | News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <button onclick="sendToPageClick('index.html')" class="lmenu">
+            <img src="logo.png" alt="Darkeon Logo">
+        </button>
+
+        <nav class="buttons">
+            <button onclick="sendToPageClick('index.html')" class="button">Home</button>
+            <button onclick="sendToPageClick('https://discord.gg/UvZV595JwD')" class="button">Discord</button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 id="goryfin">News <span id="version"></span></h1>
+
+        <h3 id="goryb">
+            The first thing I changed in this update was the tiles, they were all WRONG<br>
+            but only on the second floor<br>
+            <br>
+            Then I got rid of some of my terrible old code that had been<br>
+            rotting in this game since the stone age and did some optimizations here and there<br>
+            <br>
+            One nice change was that I finally understood how to target the framerate<br>
+            depending on the device's refresh rate, so now your 120Hz phone outputs 120fps<br>
+            when it can<br>
+            basically always<br>
+            but only when certain conditions are met<br>
+            I think<br>
+            <br>
+            I noticed the two sticks were asymmetrical<br>
+            I let my eyes finish bleeding and got to fixing that terrible UI<br>
+            now your fingers may rest at ease<br>
+            <img src="news/controls_b4.jpeg"><br><img src="news/controls.jpeg"><br>
+            <br>
+            A fellow player pointed out that the dungeons are kinda empty<br>
+            so now the dungeons are kinda less empty<br>
+            I increased the graces spawn rate a lot, increased the enemy spawn rate and even the chests a little bit<br>
+            some areas are emptier and some are less... empty, with areas where monsters are more present<br>
+            <br>
+            The biggest change by far is the items and inventory<br>
+            I changed the inventory UI yet again and I think I've settled on a design I like<br>
+            I also changed the ground items, made a little display for them and now you have to click on the item to pick it up<br>
+            so you don't need to run into enemies anymore to pick up an item<br>
+            <img src="news/inv_b4.jpeg"><br><img src="news/inv.jpeg"><br>
+            <br>
+            But I also rebalanced the potions, they are much more powerful now and have new textures<br>
+            <br>
+            Last but not least, I added 2 new biomes to the second floor, the Topaz and Sapphire caves<br>
+            <img src="news/topaz.png"><br><img src="news/sapphire.png"><br>
+            The new drops are:<br>
+            the Topaz Katana<br>
+            <img src="news/topaz_katana.png"><br>
+            and the Icicle<br>
+            <img src="news/ice_bow.png"><br>
+            good luck finding 'em<br>
+        </h3>
+
+        <button id="secret-trigger" onclick="revealSecret()"></button>
+        <p id="secret-text" style="display:none; margin-top: 20px; font-family: 'darkeon_1'; color: var(--primary);">ur
+            mom
+        </p>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
